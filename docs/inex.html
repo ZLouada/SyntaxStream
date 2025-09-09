@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zakaria Louada - Programmer & Developer</title>
+    <meta name="description" content="Portfolio of Zakaria Louada (SyntaxStream). Web development with HTML, CSS, JavaScript, and C programming." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SyntaxStream</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="menu" aria-expanded="false" role="button" tabindex="0">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- floating shapes -->
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Zakaria Louada</span>
+                </h1>
+                <p class="hero-subtitle">Passionate Programmer & Developer</p>
+                <p class="hero-description">
+                    I build delightful, fast, and accessible experiences using
+                    <span class="tech-highlight">HTML</span>,
+                    <span class="tech-highlight">CSS</span>,
+                    <span class="tech-highlight">JavaScript</span>, and
+                    <span class="tech-highlight">C</span>.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+
+                <div class="social-hero">
+                    <a href="https://github.com/ZLouada" class="social-btn" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/zakaria-louada" class="social-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/your-handle" class="social-btn" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-placeholder tilt">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- About with Tabs -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab-about">
+                    <i class="fa-solid fa-user"></i> About
+                </button>
+                <button class="tab-btn" data-tab="tab-experience">
+                    <i class="fa-solid fa-briefcase"></i> Experience
+                </button>
+                <button class="tab-btn" data-tab="tab-education">
+                    <i class="fa-solid fa-graduation-cap"></i> Education
+                </button>
+            </div>
+
+            <div class="tab-panels glass">
+                <div id="tab-about" class="tab-panel active">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3>Hello! I'm Zakaria Louada</h3>
+                            <p>
+                                I’m a developer who loves transforming ideas into
+                                elegant, performant interfaces. My focus is on clean code,
+                                usability, and smooth interactions.
+                            </p>
+                            <p>
+                                Outside of web, I enjoy the low-level precision of C,
+                                building efficient algorithms and tooling.
+                            </p>
+
+                            <div class="about-stats">
+                                <div class="stat">
+                                    <span class="stat-number">4+</span>
+                                    <span class="stat-label">Core Languages</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">∞</span>
+                                    <span class="stat-label">Curiosity</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-cards">
+                            <div class="about-card tilt">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Clean Code</h4>
+                                <p>Readable, maintainable, and scalable.</p>
+                            </div>
+                            <div class="about-card tilt">
+                                <i class="fas fa-bolt"></i>
+                                <h4>Performance</h4>
+                                <p>Fast loads, smooth interactions.</p>
+                            </div>
+                            <div class="about-card tilt">
+                                <i class="fas fa-universal-access"></i>
+                                <h4>Accessibility</h4>
+                                <p>Inclusive and usable for everyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-experience" class="tab-panel">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Frontend Projects</h4>
+                                <span class="time">2023 - Present</span>
+                                <p>Responsive UIs, animations, and component systems with HTML, CSS, and JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>C Programming</h4>
+                                <span class="time">2022 - Present</span>
+                                <p>Data structures, algorithms, and CLI utilities with a focus on correctness and speed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-education" class="tab-panel">
+                    <div class="cards-row">
+                        <div class="edu-card glass tilt">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h4>Web Foundations</h4>
+                            <p>Semantic HTML, modern CSS, and JS fundamentals.</p>
+                        </div>
+                        <div class="edu-card glass tilt">
+                            <i class="fa-solid fa-microchip"></i>
+                            <h4>Systems in C</h4>
+                            <p>Pointers, memory, and algorithmic problem solving.</p>
+                        </div>
+                        <div class="edu-card glass tilt">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <h4>Project Design</h4>
+                            <p>From idea to polished implementation and delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card html tilt">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and modern structures</p>
+                    <div class="skill-progress"><div class="progress-bar" data-width="95%"></div></div>
+                </div>
+                <div class="skill-card css tilt">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <p>Responsive design, layouts, animations</p>
+                    <div class="skill-progress"><div class="progress-bar" data-width="90%"></div></div>
+                </div>
+                <div class="skill-card js tilt">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Interactions and modern ES features</p>
+                    <div class="skill-progress"><div class="progress-bar" data-width="88%"></div></div>
+                </div>
+                <div class="skill-card c tilt">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>C Programming</h3>
+                    <p>Systems, memory, and algorithms</p>
+                    <div class="skill-progress"><div class="progress-bar" data-width="82%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects with Filters -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="c">C / Algorithms</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card tilt" data-cat="web">
+                    <div class="project-image"><i class="fas fa-globe"></i></div>
+                    <div class="project-content">
+                        <h3>Responsive Web App</h3>
+                        <p>Modern UI with smooth UX and adaptive layouts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tilt" data-cat="c">
+                    <div class="project-image"><i class="fas fa-calculator"></i></div>
+                    <div class="project-content">
+                        <h3>C Algorithm Suite</h3>
+                        <p>Optimized data structures and algorithms in C.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tilt" data-cat="web">
+                    <div class="project-image"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="project-content">
+                        <h3>Interactive Portfolio</h3>
+                        <p>This site: tabs, filters, and sleek animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info glass">
+                    <h3>Let's work together!</h3>
+                    <p>Have an idea, project, or opportunity? I’d love to hear from you.</p>
+
+                    <div class="contact-items">
+                        <a class="contact-item" href="mailto:zakaria.louada@email.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a class="contact-item" href="https://github.com/ZLouada" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a class="contact-item" href="https://linkedin.com/in/zakaria-louada" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a class="contact-item" href="https://twitter.com/your-handle" target="_blank" rel="noopener">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required />
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required />
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-note">This form is a demo. Replace with your backend or a service like Formspree.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Zakaria Louada. Built with ❤️</p>
+                <div class="social-links">
+                    <a href="https://github.com/ZLouada" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/zakaria-louada" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/your-handle" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
